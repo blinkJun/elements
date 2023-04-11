@@ -1,0 +1,62 @@
+{
+    "name": "blink-elements",
+    "version": "1.0.0",
+    "description": "components blink elements",
+    "main": "dist/blink-elements.umd.js",
+    "module": "dist/blink-elements.esm.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build:esm": "rollup --config build/rollup.esm.config.js",
+        "build:umd": "rollup --config build/rollup.umd.config.js",
+        "clean": "rimraf ./dist",
+        "build": "npm run clean && npm run build:esm && npm run build:umd",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "pre-commit": "lint-staged",
+        "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
+        "eslint": "eslint --cache \"**/*.{vue,ts,js,tsx}\" --fix",
+        "commit": "git add . && git-cz"
+    },
+    "keywords": [
+        "vue3",
+        "elements"
+    ],
+    "author": "530080147@qq.com",
+    "license": "ISC",
+    "dependencies": {
+        "vue": "^3.2.47"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.3",
+        "@commitlint/config-angular": "^17.0.3",
+        "@commitlint/cz-commitlint": "^17.0.3",
+        "@types/node": "^18.15.11",
+        "@typescript-eslint/parser": "^5.30.7",
+        "commitizen": "^4.2.4",
+        "cz-customizable": "^6.9.0",
+        "eslint": "^7.25.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-friendly-formatter": "^4.0.1",
+        "eslint-plugin-html": "^6.2.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^9.2.0",
+        "husky": "^8.0.1",
+        "inquirer": "^8.0.0",
+        "lint-staged": "^12.4.1",
+        "pnpm": "^8.2.0",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "web-norm": "^1.0.27"
+    },
+    "lint-staged": {
+        "*.{js,ts,vue,jsx,tsx}": [
+            "npm run eslint"
+        ],
+        "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
+    },
+    "config": {
+        "commitizen": {
+            "path": "@commitlint/cz-commitlint"
+        }
+    }
+}

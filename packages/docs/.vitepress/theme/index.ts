@@ -1,0 +1,27 @@
+import { App } from 'vue'
+
+import 'normalize.css'
+import '../style/vars.scss'
+// .vitepress/theme/index.js
+import DefaultTheme from 'vitepress/dist/client/theme-default/index'
+
+import VPDemo from '../vitepress/components/vp-demo.vue'
+
+import blinkElements from '@blinkjun/elements'
+
+// import "@blink-elements/components/dist/bundle.css"
+
+export default {
+    ...DefaultTheme,
+    enhanceApp: (data) => {
+        const { app, router, siteData } = data
+        const context: App = app
+        // 注册demo组件
+        context.component('Demo', VPDemo)
+        // 注册组件库所有组件
+        console.log(blinkElements)
+        // for (let key in blinkElements) {
+        //     context.component(key, blinkElements[key])
+        // }
+    }
+}

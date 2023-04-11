@@ -1,0 +1,35 @@
+{
+    "name": "@blinkjun/elements",
+    "version": "1.0.0",
+    "description": "components blink elements",
+    "main": "dist/blink-elements.umd.js",
+    "module": "dist/blink-elements.esm.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build:esm": "rollup --config build/rollup.esm.config.js",
+        "build:umd": "rollup --config build/rollup.umd.config.js",
+        "clean": "rimraf ./dist",
+        "build": "npm run clean && npm run build:esm && npm run build:umd",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "vue3",
+        "elements"
+    ],
+    "author": "530080147@qq.com",
+    "license": "ISC",
+    "dependencies": {},
+    "peerDependencies": {
+        "vue": "^3.2.47"
+    },
+    "devDependencies": {
+        "rimraf": "^3.0.2",
+        "@rollup/plugin-json": "^4.1.0",
+        "@vue/compiler-sfc": "^3.2.21",
+        "rollup": "^2.75.4",
+        "rollup-plugin-css-only": "^3.1.0",
+        "rollup-plugin-typescript2": "^0.32.0",
+        "rollup-plugin-vue": "^6.0.0",
+        "typescript": "4.7.2"
+    }
+}

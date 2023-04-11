@@ -1,0 +1,8 @@
+
+.prettierrc
+!commitlint.config.js
+.babel.config.js
+!.umirc.ts
+**/*/dist
+**/*/cache
+!.eslintrc.js

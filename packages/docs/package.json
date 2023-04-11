@@ -1,0 +1,31 @@
+{
+    "name": "@blinkjun/element-docs",
+    "version": "1.0.0",
+    "description": "docs",
+    "main": "index.js",
+    "imports": {
+        "@blinkjun/elements": "../elements/index.ts"
+    },
+    "scripts": {
+        "docs:dev": "vitepress dev .",
+        "docs:build": "vitepress build .",
+        "docs:serve": "vitepress serve .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@blinkjun/elements": "workspace:*",
+        "chalk": "^5.2.0",
+        "escape-html": "^1.0.3",
+        "markdown-it": "^13.0.1",
+        "markdown-it-container": "^3.0.0",
+        "normalize.css": "^8.0.1",
+        "prismjs": "^1.29.0",
+        "sass": "^1.61.0",
+        "vitepress": "1.0.0-alpha.65"
+    },
+    "devDependencies": {
+        "@vueuse/core": "^9.13.0"
+    }
+}
