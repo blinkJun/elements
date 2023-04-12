@@ -1,20 +1,41 @@
+import { mdPlugin } from './plugins/markdown'
 export default {
     title: 'Blink Elements',
     description: 'Blink 的组件库',
-    base: '/docs/',
-    head: [['link', { rel: 'icon', href: '/doc/images/logo.png' }]],
+    markdown: {
+        config: mdPlugin
+    },
+    base: '/elements/',
+    head: [['link', { rel: 'icon', href: '/elements/images/logo.png' }]],
     themeConfig: {
         logo: '/images/logo.png',
         logoSmall: '/images/logo.png',
         editLink: {
-            pattern: 'https://github.com/blinkJun/doc/edit/master/src/:path',
+            pattern: 'https://github.com/blinkJun/elements/edit/master/packages/docs/src/:path',
             text: 'Edit this page on GitHub'
         },
         docsBranch: 'master',
-        nav: [{ text: '通用组件', link: '' }],
+        nav: [
+            { text: '通用组件', link: '/src/elements/test' },
+            { text: '组合式函数', link: '/src/composition/count-to' }
+        ],
         socialLinks: [{ icon: 'github', link: 'https://github.com/blinkJun/elements' }],
         footer: {
             copyright: 'Copyright © 2023-present Blink'
+        },
+        sidebar: {
+            '/src/elements': [
+                {
+                    text: '测试组件',
+                    link: '/src/elements/test'
+                }
+            ],
+            '/src/composition': [
+                {
+                    text: 'useCountTo',
+                    link: '/src/composition/count-to'
+                }
+            ]
         }
     }
 }

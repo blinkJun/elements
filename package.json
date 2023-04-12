@@ -6,10 +6,9 @@
     "module": "dist/blink-elements.esm.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build:esm": "rollup --config build/rollup.esm.config.js",
-        "build:umd": "rollup --config build/rollup.umd.config.js",
+        "docs:dev": "pnpm -C packages/docs docs:dev",
+        "build": "pnpm -C packages/elements build && pnpm -C packages/docs docs:build",
         "clean": "rimraf ./dist",
-        "build": "npm run clean && npm run build:esm && npm run build:umd",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "husky install",
         "pre-commit": "lint-staged",

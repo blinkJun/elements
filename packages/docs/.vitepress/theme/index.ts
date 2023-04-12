@@ -9,7 +9,7 @@ import VPDemo from '../vitepress/components/vp-demo.vue'
 
 import blinkElements from '@blinkjun/elements'
 
-// import "@blink-elements/components/dist/bundle.css"
+import '@blinkjun/elements/dist/bundle.css'
 
 export default {
     ...DefaultTheme,
@@ -19,9 +19,6 @@ export default {
         // 注册demo组件
         context.component('Demo', VPDemo)
         // 注册组件库所有组件
-        console.log(blinkElements)
-        // for (let key in blinkElements) {
-        //     context.component(key, blinkElements[key])
-        // }
+        app.use(blinkElements)
     }
 }

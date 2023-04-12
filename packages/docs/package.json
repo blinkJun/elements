@@ -3,9 +3,7 @@
     "version": "1.0.0",
     "description": "docs",
     "main": "index.js",
-    "imports": {
-        "@blinkjun/elements": "../elements/index.ts"
-    },
+    "type": "module",
     "scripts": {
         "docs:dev": "vitepress dev .",
         "docs:build": "vitepress build .",
@@ -26,6 +24,7 @@
         "vitepress": "1.0.0-alpha.65"
     },
     "devDependencies": {
-        "@vueuse/core": "^9.13.0"
+        "@vueuse/core": "^9.13.0",
+        "vite": "^4.2.1"
     }
 }

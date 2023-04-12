@@ -5,6 +5,16 @@
     "main": "dist/blink-elements.umd.js",
     "module": "dist/blink-elements.esm.js",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/blink-elements.esm.js",
+            "require": "./dist/blink-elements.umd.js",
+            "types": "./dist/index.d.ts"
+        },
+        "./hooks/*": "./hooks/*",
+        "./utils/*": "./utils/*",
+        "./dist/*": "./dist/*"
+    },
     "scripts": {
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
