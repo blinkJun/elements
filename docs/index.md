@@ -10,7 +10,7 @@ hero:
     actions:
         - theme: brand
           text: 查看组件 →
-          link: /md/HTML/基本概念
+          link: /src/elements/test
         - theme: alt
           text: View on GitHub
           link: https://github.com/blinkJun/elements
@@ -25,3 +25,5 @@ features:
     - title: 组合式Api
       details: 工作中常用组合式Api积累.
 ---
+
+<!-- Placeholder -->

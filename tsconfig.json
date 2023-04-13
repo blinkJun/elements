@@ -19,19 +19,17 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "strict": true,
-        "skipLibCheck": true,
-        "paths": {
-            "baseUrl": [
-                "./packages/"
-            ]
-        }
+        "skipLibCheck": true
     },
     "include": [
-        "docs/.vitepress/**/*"
+        "docs/.vitepress/**/*",
+        "elements/**/*"
     ],
     "exclude": [
         "node_modules",
         "**/__tests__",
-        "dist/**"
+        "dist/**",
+        "elements/dist",
+        "docs/dist",
     ]
 }

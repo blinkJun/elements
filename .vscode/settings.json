@@ -28,5 +28,6 @@
     "*.cshtml": "html",
     "*.dwt": "html"
   },
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
