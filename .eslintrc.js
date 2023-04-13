@@ -151,7 +151,8 @@ module.exports = {
         'no-multiple-empty-lines': [
             2,
             {
-                max: 2
+                max: 1,
+                maxEOF: 2
             }
         ],
         'no-native-reassign': 2,
