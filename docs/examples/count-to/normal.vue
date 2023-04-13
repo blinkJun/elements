@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { useCountTo } from '@blinkjun/elements/hooks/index'
-import * as easeFuncList from '@blinkjun/elements/utils/index'
+import * as easeFuncList from '@blinkjun/elements/utils/easing'
 
 // 默认缓动动画
 const easeFuncName = ref('easeIn')
