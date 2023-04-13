@@ -5,7 +5,7 @@ import tsPlugin from 'rollup-plugin-typescript2'
 import { dependencies } from '../package.json'
 export const name = 'blink-elements'
 export const file = (type) => `dist/${name}.${type}.js`
-const deps = Object.keys(dependencies)
+const deps = Object.keys(dependencies || {})
 export default {
     input: 'index.ts',
     output: {

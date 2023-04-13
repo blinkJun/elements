@@ -1,6 +1,6 @@
 {
     "name": "@blinkjun/elements",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "components blink elements",
     "main": "dist/blink-elements.umd.js",
     "module": "dist/blink-elements.esm.js",
@@ -32,7 +32,6 @@
     "scripts": {
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
-        "version": "blink version",
         "clean": "rimraf ./dist",
         "build": "npm run clean && npm run build:esm && npm run build:umd",
         "test": "echo \"Error: no test specified\" && exit 1"
