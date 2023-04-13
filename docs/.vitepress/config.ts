@@ -11,10 +11,10 @@ export default {
         logo: '/images/logo.png',
         logoSmall: '/images/logo.png',
         editLink: {
-            pattern: 'https://github.com/blinkJun/elements/edit/master/packages/docs/src/:path',
+            pattern: 'https://github.com/blinkJun/elements/edit/main/docs/:path',
             text: 'Edit this page on GitHub'
         },
-        docsBranch: 'master',
+        docsBranch: 'main',
         nav: [
             { text: '通用组件', link: '/src/elements/test' },
             { text: '组合式函数', link: '/src/composition/count-to' }

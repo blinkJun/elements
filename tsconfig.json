@@ -27,7 +27,7 @@
         }
     },
     "include": [
-        "packages/docs/.vitepress/**/*"
+        "docs/.vitepress/**/*"
     ],
     "exclude": [
         "node_modules",

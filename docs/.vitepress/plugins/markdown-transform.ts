@@ -33,8 +33,7 @@ ${codes.join('\n')}
 `
 
 const combineMarkdown = (code: string, headers: string[], footers: string[]) => {
-    let frontmatterEnds = code.indexOf('---\r\n\r\n')
-    console.log(frontmatterEnds)
+    let frontmatterEnds = code.indexOf('---\r\n\r')
     const firstHeader = code.search(/\n#{1,6}\s.+/)
     const sliceIndex = firstHeader < 0 ? (frontmatterEnds < 0 ? 0 : frontmatterEnds + 4) : firstHeader
 
