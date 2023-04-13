@@ -10,7 +10,7 @@
         "build:docs": "pnpm -C docs docs:build",
         "build:elements": "pnpm -C elements build",
         "build": "pnpm -C elements build && pnpm -C docs docs:build",
-        "version": "pnpm run -C elements \"blink version\"",
+        "version": "pnpm run -C elements \"version\"",
         "clean": "rimraf ./dist",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "husky install",

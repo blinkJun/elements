@@ -29,6 +29,6 @@ jobs:
             - run: npm i pnpm -g
             - run: pnpm install --lockfile=false
             - run: pnpm run build:elements
-            - run: pnpm -C elements publish
+            - run: pnpm publish elements
               env:
                   NODE_AUTH_TOKEN: ${{secrets.npm_token}}
