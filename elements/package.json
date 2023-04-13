@@ -16,7 +16,8 @@
         "./dist/*": "./dist/*"
     },
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     },
     "bugs": {
         "url": "https://github.com/blinkJun/elements/issues"
@@ -25,6 +26,7 @@
     "scripts": {
         "build:esm": "rollup --config build/rollup.esm.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
+        "version": "blink version",
         "clean": "rimraf ./dist",
         "build": "npm run clean && npm run build:esm && npm run build:umd",
         "test": "echo \"Error: no test specified\" && exit 1"
