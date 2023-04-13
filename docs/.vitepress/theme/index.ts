@@ -1,15 +1,12 @@
 import { App } from 'vue'
 
-import 'normalize.css'
 import '../style/vars.scss'
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/dist/client/theme-default/index'
 
 import VPDemo from '../vitepress/components/vp-demo.vue'
 
-import blinkElements from '@blinkjun/elements'
-
-import '@blinkjun/elements/dist/bundle.css'
+import blinkElements from '@blinkjun/elements/components/common/index'
 
 export default {
     ...DefaultTheme,

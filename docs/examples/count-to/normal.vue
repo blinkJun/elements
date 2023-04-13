@@ -5,7 +5,7 @@
     &nbsp;
     <button type="button" @click="min">-</button>
     &nbsp; 缓动动画：
-    <select v-model="easeFuncName">
+    <select v-model="easeFuncName" style="border: 1px solid #aaa; padding: 0 10px">
         <template v-for="item in easeFuncList" :key="item">
             <option :value="item.name">{{ item.name }}</option>
         </template>
