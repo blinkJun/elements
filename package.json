@@ -6,8 +6,8 @@
     "module": "dist/blink-elements.esm.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "docs:dev": "pnpm -C packages/docs docs:dev",
-        "build": "pnpm -C packages/elements build && pnpm -C packages/docs docs:build",
+        "docs:dev": "pnpm -C docs docs:dev",
+        "build": "pnpm -C elements build && pnpm -C docs docs:build",
         "clean": "rimraf ./dist",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "husky install",
