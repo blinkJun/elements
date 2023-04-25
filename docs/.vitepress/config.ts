@@ -16,7 +16,7 @@ export default {
         },
         docsBranch: 'main',
         nav: [
-            { text: '通用组件', link: '/src/elements/test' },
+            { text: '通用组件', link: '/src/elements/echart' },
             { text: '组合式函数', link: '/src/composition/count-to' }
         ],
         socialLinks: [{ icon: 'github', link: 'https://github.com/blinkJun/elements' }],
@@ -26,8 +26,8 @@ export default {
         sidebar: {
             '/src/elements': [
                 {
-                    text: '测试组件',
-                    link: '/src/elements/test'
+                    text: 'echart',
+                    link: '/src/elements/echart'
                 }
             ],
             '/src/composition': [

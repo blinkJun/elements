@@ -6,7 +6,9 @@ export default {
         file: file('umd'),
         format: 'umd',
         globals: {
-            vue: 'Vue'
+            vue: 'Vue',
+            echarts: 'echarts',
+            'resize-detector': 'resizeDetector'
         },
         exports: 'named'
     }
