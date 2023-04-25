@@ -7,6 +7,7 @@ import { computed, onBeforeUnmount, onMounted, ref, shallowRef, watch } from 'vu
 import { addListener, removeListener } from 'resize-detector'
 import merge from 'merge'
 import * as echarts from 'echarts'
+import { throttle } from 'echarts/core'
 import defaultTheme from './macarons'
 const props = defineProps({
     affixOption: Object, // 附加参数，配置图表的渲染方式及大小等
@@ -59,10 +60,10 @@ const showLoading = () => {
     }
 }
 /* 重置尺寸 */
-const resize = () => {
+const resize = throttle(() => {
     if (!chartInstance.value) return
     chartInstance.value.resize()
-}
+}, 100)
 const init = async () => {
     if (chartInstance.value) return
     const echartsInit = () => echarts.init(chartRef.value!, props.theme, props.affixOption)

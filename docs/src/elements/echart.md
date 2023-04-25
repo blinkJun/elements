@@ -8,6 +8,14 @@ echart/normal
 
 :::
 
+## 自适应大小
+
+:::demo 点击按钮改变容器大小，图表将自适应
+
+echart/resize
+
+:::
+
 ## `Attributes`
 
 <div class="attr-table" >

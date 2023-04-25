@@ -10,7 +10,7 @@ hero:
     actions:
         - theme: brand
           text: 查看组件 →
-          link: /src/elements/test
+          link: /src/elements/echarts
         - theme: alt
           text: View on GitHub
           link: https://github.com/blinkJun/elements
