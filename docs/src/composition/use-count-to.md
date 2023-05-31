@@ -6,6 +6,6 @@
 
 :::demo 切换数值时出现动画
 
-count-to/normal
+use-count-to/normal
 
 :::
