@@ -8,6 +8,7 @@ export default {
         globals: {
             vue: 'Vue',
             echarts: 'echarts',
+            'vue-router': 'VueRouter',
             'resize-detector': 'resizeDetector',
             'echarts/core': 'echarts'
         },

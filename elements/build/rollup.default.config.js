@@ -19,7 +19,11 @@ export default {
         commonjsPlugin(),
         tsPlugin({
             tsconfigOverride: {
-                declaration: true
+                compilerOptions: {
+                    declaration: true
+                },
+                include: ['elements/**/*'],
+                exclude: ['docs']
             }
         }),
         vuePlugin({
