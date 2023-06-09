@@ -35,3 +35,10 @@ watch(easeFuncName, () => {
     updateEaseFunc(easeFuncList[easeFuncName.value])
 })
 </script>
+<style scoped>
+button {
+    padding: 0px 10px;
+    background-color: seagreen;
+    color: #fff;
+}
+</style>

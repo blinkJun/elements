@@ -107,8 +107,9 @@ const resetSize = () => {
 
 <style lang="scss" scoped>
 button {
-    padding: 0 10px;
-    background-color: #eee;
+    padding: 5px 10px;
+    background-color: slateblue;
+    color: #fff;
     &:first-child {
         margin-right: 10px;
     }
