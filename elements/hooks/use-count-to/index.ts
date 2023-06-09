@@ -19,7 +19,7 @@ interface Result {
     updateEaseFunc: (easeFunc: EasingFunc) => void
 }
 
-export const useCountTo = (value: Ref<number>, options: Options): Result => {
+export const useCountTo = (value: Ref<number>, options: Options = {}): Result => {
     // 避免重复触发的id
     let effectId = 0
     const { decimals = 2, decimal = '.', separator = ',', prefix = '', suffix = '', duration = 1500 } = options

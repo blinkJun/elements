@@ -1,12 +1,9 @@
 import { App } from 'vue'
-
-import '../style/vars.scss'
-// .vitepress/theme/index.js
+import blinkElements from '@blinkjun/elements/components/common/index'
 import DefaultTheme from 'vitepress/dist/client/theme-default/index'
-
 import VPDemo from '../vitepress/components/vp-demo.vue'
 
-import blinkElements from '@blinkjun/elements/components/common/index'
+import '../style/vars.scss'
 
 export default {
     ...DefaultTheme,

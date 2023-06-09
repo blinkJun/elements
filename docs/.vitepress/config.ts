@@ -36,6 +36,10 @@ export default {
                     link: '/src/composition/use-count-to'
                 },
                 {
+                    text: 'useCountDownSeconds',
+                    link: '/src/composition/use-count-down-seconds'
+                },
+                {
                     text: 'usePage',
                     link: '/src/composition/use-page'
                 }
