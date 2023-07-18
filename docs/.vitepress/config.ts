@@ -28,6 +28,10 @@ export default {
                 {
                     text: 'echart',
                     link: '/src/elements/echart'
+                },
+                {
+                    text: 'box',
+                    link: '/src/elements/box'
                 }
             ],
             '/src/composition': [
@@ -42,6 +46,10 @@ export default {
                 {
                     text: 'usePage',
                     link: '/src/composition/use-page'
+                },
+                {
+                    text: 'useData',
+                    link: '/src/composition/use-data'
                 }
             ]
         }
