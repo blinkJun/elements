@@ -5,6 +5,7 @@ function install(app, options) {
 }
 
 export * from './hooks/index'
+export * from './components/common/components'
 
 export default {
     install
