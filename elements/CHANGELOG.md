@@ -1,5 +1,11 @@
 # @blinkjun/elements
 
+## 1.3.1
+
+### Patch Changes
+
+-   add export
+
 ## 1.3.0
 
 ### Minor Changes

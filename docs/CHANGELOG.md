@@ -1,5 +1,13 @@
 # @blinkjun/element-docs
 
+## 1.3.1
+
+### Patch Changes
+
+-   add export
+-   Updated dependencies
+    -   @blinkjun/elements@1.3.1
+
 ## 1.3.0
 
 ### Minor Changes
